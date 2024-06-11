@@ -1,0 +1,54 @@
+# .gitignore
+
+# ログファイルを無視する
+logs
+*.log
+npm-debug.log*
+
+# 依存ディレクトリを無視する
+node_modules/
+vendor/
+
+# ビルド出力ディレクトリを無視する
+dist/
+build/
+.next/
+out/
+
+# Goのバイナリファイルを無視する
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Goの特定ファイルを無視する
+*.test
+*.out
+*.prof
+*.bin
+
+# 環境変数ファイルを無視する
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE固有の設定ファイルを無視する
+.vscode/
+.idea/
+.DS_Store
+
+# 一時ファイルやディレクトリを無視する
+tmp/
+temp/
+*.tmp
+*.temp
+
+# アップロードされたファイルが保存されるディレクトリを無視する
+backend/uploads/
+
+# テストカバレッジレポートを無視する
+coverage/
+*.lcov
