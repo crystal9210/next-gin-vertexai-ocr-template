@@ -1,13 +1,18 @@
-# .gitignore
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # ログファイルを無視する
 logs
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # 依存ディレクトリを無視する
 node_modules/
 vendor/
+/.pnp
+.pnp.js
+.yarn/install-state.gz
 
 # ビルド出力ディレクトリを無視する
 dist/
@@ -34,6 +39,7 @@ out/
 .env.development.local
 .env.test.local
 .env.production.local
+.env*.local
 
 # IDE固有の設定ファイルを無視する
 .vscode/
@@ -52,3 +58,13 @@ backend/uploads/
 # テストカバレッジレポートを無視する
 coverage/
 *.lcov
+
+# Vercel関連のファイルを無視する
+.vercel
+
+# TS関連のファイルを無視する
+*.tsbuildinfo
+next-env.d.ts
+
+# Misc
+*.pem
